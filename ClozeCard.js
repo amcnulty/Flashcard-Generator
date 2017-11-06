@@ -16,5 +16,14 @@ function ClozeCard(text, cloze) {
     this.cloze = cloze;
     this.partial = text.replace(cloze, '...');
 }
+/**
+ * Checks if the answer parameter is a correct or incorrect answer. This method returns true if answer is correct and false if incorrect.
+ * 
+ * @param {String} answer - The answer to check for correctness.
+ * @returns {Boolean}
+ */
+ClozeCard.prototype.answerIsCorrect = function(answer) {
+    return (answer === this.cloze) ? true : false;
+}
 
 module.exports = ClozeCard;
