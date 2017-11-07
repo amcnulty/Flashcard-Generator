@@ -24,8 +24,14 @@ describe('BasicCard Object', function() {
         it('BasicCard.prototype.answerIsCorrect should return true when a correct answer is passed to this method.', function() {
             expect(myCard.answerIsCorrect('George Washington')).to.equal(true);
         });
+        it('BasicCard.prototype.answerIsCorrect should not be case sensitive', function() {
+            expect(myCard.answerIsCorrect('geoRGe wAsHiNGtoN')).to.equal(true);
+        });
         it('BasicCard.prototype.getQuestion should return - Who was the first president of the United States?', function() {
             expect(myCard.getQuestion()).to.equal('Who was the first president of the United States?');
-        })
+        });
+        it('BasicCard.prototype.getAnswer should return - George Washington', function() {
+            expect(myCard.getAnswer()).to.equal('George Washington');
+        });
     });
 });

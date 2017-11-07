@@ -33,8 +33,14 @@ describe('ClozeCard Object', function() {
         it('ClozeCard.prototype.answerIsCorrect should return true when a correct answer is passed to this method.', function() {
             expect(myCard.answerIsCorrect('George Washington')).to.equal(true);
         });
+        it('ClozeCard.prototype.answerIsCorrect should not be case sensitive', function() {
+            expect(myCard.answerIsCorrect('geoRGe wAsHiNGtoN')).to.equal(true);
+        });
         it('ClozeCard.prototype.getQuestion should return - ... was the first president of the United States.', function() {
             expect(myCard.getQuestion()).to.equal('... was the first president of the United States.');
-        })
+        });
+        it('ClozeCard.prototype.genAnswer should return - George Washington', function() {
+            expect(myCard.getAnswer()).to.equal('George Washington');
+        });
     });
 });
