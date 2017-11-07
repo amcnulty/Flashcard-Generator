@@ -20,5 +20,13 @@ function BasicCard(front, back) {
 BasicCard.prototype.answerIsCorrect = function(answer) {
     return (answer === this.back) ? true : false;
 }
+/**
+ * Returns the question to be displayed to the user.
+ * 
+ * @returns {String}
+ */
+BasicCard.prototype.getQuestion = function() {
+    return this.front;
+}
 
 module.exports = BasicCard;

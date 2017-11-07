@@ -25,5 +25,13 @@ function ClozeCard(text, cloze) {
 ClozeCard.prototype.answerIsCorrect = function(answer) {
     return (answer === this.cloze) ? true : false;
 }
+/**
+ * Returns the question to be displayed to the user.
+ * 
+ * @returns {String}
+ */
+ClozeCard.prototype.getQuestion = function() {
+    return this.partial;
+}
 
 module.exports = ClozeCard;
