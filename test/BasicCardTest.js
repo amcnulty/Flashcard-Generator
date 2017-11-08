@@ -1,3 +1,15 @@
+/**
+ * BasicCardTest is a set of tests for the BasicCard object. It tests if BasicCard objects
+ * that are created without the new keyword are indeed instances of BasicCard. Other tests
+ * are for the text values that are stored to the object and the methods attached to the
+ * object.
+ * 
+ * @summary A set of tests for the BasicCard object.
+ * @since 1.0.0
+ * @version 1.0.0
+ * 
+ * @author Aaron Michael McNulty
+ */
 var BasicCard = require("../BasicCard");
 var chai = require('chai');
 var expect = chai.expect;

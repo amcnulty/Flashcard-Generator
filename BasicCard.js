@@ -1,4 +1,16 @@
 /**
+ * The BasicCard object is used to create a basic flashcard with a front and a back
+ * and an optional choices array for multiple choice questions. The methods attached
+ * to BasicCard allow for checking if an answer is correct, returning the question
+ * and answer of the flashcard and returning the multiple choice options.
+ * 
+ * @summary A constructor for the BasicCard object and it's attached methods.
+ * @since 1.0.0
+ * @version 1.0.0
+ * 
+ * @author Aaron Michael McNulty
+ */
+/**
  * Constructor for creating a flashcard consisting of a question and answer.
  * 
  * @since 1.0.0
@@ -15,7 +27,8 @@ function BasicCard(front, back, choices) {
     this.choices = arguments[2] || [];
 }
 /**
- * Checks if the answer parameter is a correct or incorrect answer. This method returns true if answer is correct and false if incorrect.
+ * Checks if the answer parameter is a correct or incorrect answer. This method returns
+ * true if answer is correct and false if incorrect.
  * 
  * @since 1.0.0
  * @param {String} answer - The answer to check for correctness.

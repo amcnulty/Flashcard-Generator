@@ -1,4 +1,16 @@
 /**
+ * The ClozeCard object is used to create a cloze deleted flashcard with a text, cloze
+ * and an optional choices array for multiple choice questions. The methods attached
+ * to ClozeCard allow for checking if an answer is correct, returning the question
+ * and answer of the flashcard and returning the multiple choice options.
+ * 
+ * @summary A constructor for the ClozeCard object and it's attached methods.
+ * @since 1.0.0
+ * @version 1.0.0
+ * 
+ * @author Aaron Michael McNulty
+ */
+/**
  * Constructor for creating flashcards with a text and a portion of the text to be replaced. The portion of text to be cloze deleted is replaced with an ellipses. In the event that the cloze text passed to the constructor is not found in the text and error is thrown.
  * 
  * @since 1.0.0
